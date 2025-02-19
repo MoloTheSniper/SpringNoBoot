@@ -2,45 +2,28 @@ package com.Moloko.springNoBoot;
 
 public class Dev 
 {
-	private Laptop laptop;
-	private int age;
+	private Computer com;
+	
+	//--Desktop---
+	private Desktop desktop;
+	
+	
 	public Dev()
 	{
 		System.out.println("Dev Constructor");
 	}
-	//Constructor Injection
-	public Dev(int age)
-	{
-		this.age = age;
-		System.out.println("Dev 1 Constructor");
-	}
-	//Constructor Injection
-	public Dev(Laptop laptop)
-	{
-		this.laptop = laptop;
-		System.out.println("Dev 1 Constructor");
-	}
-	//Setter Injection
-	public void setAge(int age)
-	{
-		this.age = age;
-	}
-	public int getAge()
-	{
-		return age;
-	}
 	
-	public void setLaptop(Laptop laptop)
+	public Computer getCom()
 	{
-		this.laptop = laptop;
+		return com;
 	}
-	public Laptop getLaptop()
+	public void setCom(Computer com)
 	{
-		return laptop;
+		this.com = com;
 	}
 	public void build()
 	{
 		System.out.println("Working on an awesome project");
-		laptop.compile();
+		com.compile();
 	}
 }

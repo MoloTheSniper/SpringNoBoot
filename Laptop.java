@@ -1,6 +1,6 @@
 package com.Moloko.springNoBoot;
 
-public class Laptop 
+public class Laptop implements Computer 
 {
 	public Laptop()
 	{
@@ -8,6 +8,6 @@ public class Laptop
 	}
 	public void compile() 
 	{
-		System.out.println("compiling");
+		System.out.println("Compiling in Laptop");
 	}
 }
